@@ -18,6 +18,14 @@ sudo dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
 sudo dokku plugin:update letsencrypt
 ```
 
+### Simple setup
+
+```shell
+dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+dokku letsencrypt:set --global email <email-here>
+dokku letsencrypt:cron-job --add
+```
+
 ## Commands
 
 ```
